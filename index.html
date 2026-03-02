@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Four Flavours | Artisan Bakery</title>
+    <meta name="description" content="Four Flavours - Experience the finest artisan bread, delicate pastries, and decadent cakes at our modern bakery.">
+    <!-- Google Fonts for typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Top Header Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo">
+                <span class="logo-text">FOUR FLAVOURS</span>
+            </a>
+            
+            <nav class="nav-links" id="navLinks">
+                <a href="#home">Home</a>
+                <a href="#featured">Menu</a>
+                <a href="#about">Our Story</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <button class="menu-btn" aria-label="Toggle menu" id="mobileMenuBtn">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Slider Section -->
+    <section class="hero" id="home">
+        <div class="slider-container" id="sliderContainer">
+            <!-- Slide 1 -->
+            <div class="slide active">
+                <div class="slide-bg" style="background-image: url('images/hero1.jpg');"></div>
+                <div class="slide-content">
+                    <h1 class="slide-title">Artisan Baking,<br>Refined.</h1>
+                    <p class="slide-text">Experience the pure taste of passion and tradition in every bite.</p>
+                    <a href="#featured" class="btn btn-primary">Explore Our Menu</a>
+                </div>
+            </div>
+            <!-- Slide 2 -->
+            <div class="slide">
+                <div class="slide-bg" style="background-image: url('images/hero2.jpg');"></div>
+                <div class="slide-content">
+                    <h1 class="slide-title">Seasonal<br>Delights</h1>
+                    <p class="slide-text">Discover our new collection of autumn-inspired pastries.</p>
+                    <a href="#featured" class="btn btn-primary">View Seasonal Items</a>
+                </div>
+            </div>
+            <!-- Slide 3 -->
+            <div class="slide">
+                <div class="slide-bg" style="background-image: url('images/hero3.jpg');"></div>
+                <div class="slide-content">
+                    <h1 class="slide-title">Fresh Bread,<br>Every Morning</h1>
+                    <p class="slide-text">Sourdoughs, baguettes, and specialty breads baked at dawn.</p>
+                    <a href="#about" class="btn btn-primary">Our Process</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="slider-controls">
+            <button class="slider-btn prev" id="prevSlide" aria-label="Previous slide">&#10094;</button>
+            <button class="slider-btn next" id="nextSlide" aria-label="Next slide">&#10095;</button>
+        </div>
+
+        <div class="slider-dots" id="sliderDots">
+            <span class="dot active" data-index="0"></span>
+            <span class="dot" data-index="1"></span>
+            <span class="dot" data-index="2"></span>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section class="featured-section" id="featured">
+        <div class="container">
+            <div class="section-header">
+                <p class="subtitle">A TASTE OF PERFECTION</p>
+                <h2 class="title">Our Signature Creations</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-img-wrapper">
+                        <img src="images/product1.jpg" alt="Signature Dark Chocolate Croissant" class="product-img">
+                        <div class="product-overlay">
+                            <span class="product-price">$5.50</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Signature Dark Chocolate Croissant</h3>
+                        <p class="product-desc">Flaky artisan pastry generously filled with premium Valrhona dark chocolate.</p>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-img-wrapper">
+                        <img src="images/product2.jpg" alt="Classic French Baguette" class="product-img">
+                        <div class="product-overlay">
+                            <span class="product-price">$4.00</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Classic French Baguette</h3>
+                        <p class="product-desc">Traditional slow-fermented baguette with a perfectly crisp crust and airy crumb.</p>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-img-wrapper">
+                        <img src="images/product3.jpg" alt="Raspberry Rose Tart" class="product-img">
+                        <div class="product-overlay">
+                            <span class="product-price">$7.50</span>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Raspberry Rose Tart</h3>
+                        <p class="product-desc">Delicate shortcrust filled with vanilla bean pâtissière and fresh raspberries.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center" style="margin-top: 4rem;">
+                <a href="#" class="btn btn-outline">View Full Menu</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Experience Section (Parallax/Banner) -->
+    <section class="experience" id="about" style="background-image: linear-gradient(rgba(18, 18, 18, 0.7), rgba(18, 18, 18, 0.7)), url('images/hero1.jpg');">
+        <div class="container">
+            <div class="experience-content">
+                <h2 class="title" style="color: white; margin-bottom: 20px;">The Four Flavours Experience</h2>
+                <p style="color: #f5f5f5; max-width: 600px; margin: 0 auto; line-height: 1.8; font-size: 1.1rem; margin-bottom: 30px;">
+                    We believe that exceptional baking requires time, patience, and the finest ingredients. Every loaf, pastry, and cake that leaves our kitchen represents our commitment to culinary artistry.
+                </p>
+                <a href="#home" class="btn btn-primary">Read Our Story</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <h3 class="footer-brand">FOUR FLAVOURS</h3>
+                    <p class="footer-desc">Crafting moments of joy through exceptional baking since 2026. A modern bakery experience rooted in timeless traditions.</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">Visit Us</h4>
+                    <p>123 Baker Street<br>Artisan District<br>New York, NY 10001</p>
+                    <p style="margin-top: 10px;">info@fourflavours.com<br>+1 (555) 123-4567</p>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">Opening Hours</h4>
+                    <ul class="hours-list">
+                        <li><span>Mon - Fri</span> <span>7:00 AM - 6:00 PM</span></li>
+                        <li><span>Saturday</span> <span>8:00 AM - 5:00 PM</span></li>
+                        <li><span>Sunday</span> <span>8:00 AM - 2:00 PM</span></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h4 class="footer-title">Quick Links</h4>
+                    <ul class="links-list">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#featured">Our Menu</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#">Careers</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Four Flavours Bakery. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Instagram">IG</a>
+                    <a href="#" aria-label="Facebook">FB</a>
+                    <a href="#" aria-label="Twitter">TW</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
